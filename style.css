@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    padding: 50px;
+}
+button {
+    cursor: pointer;
+}
+/* Navbar styling */
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 10px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+.navbar .logo > img {
+    width: 200px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar > nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links > ul > li > a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #888;
+    font-weight: 400;
+}
+.nav-links > ul > li > a:hover {
+    border-bottom: 3px solid #8dc63f;
+}
+.about, .services, .media, .contact, .other-webs {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown a {
+    text-decoration: none;
+    color: #000;    
+    padding: 10px;
+    text-transform: capitalize;
+}
+.dropdown a:hover {
+    background-color: #8dc63f;
+    color: #fff;
+}
+.dropdown {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+}
+.nav-links > ul > li:hover .dropdown {
+    display: flex;   
+}
+.nav-btn {
+    display: flex;
+    gap: 10px;
+}
+.nav-btn button {
+    background-color: #4482f6;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+.nav-btn button:hover {
+    background-color: #8dc63f;
+}
+/* Navbar styling end */
+
+/* hero section styling stars */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Text side styling */
+.hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 50px;
+    text-align: left;
+}
+.text-side .non-capital {
+    text-transform: none;
+}
+.text-side .saylani {
+    color: #8dc63f;
+}
+.text-side button {
+    padding: 15px 40px;
+    text-transform: capitalize;
+    font-size: 14px;
+    background: none;
+    border: 1px solid #000;
+}
+.text-element {
+    margin-bottom: 20px;
+}
+/* Image side styling */
+.img-side img {
+    height: 520px;
+    margin-top: 60px;
+}
+/* hero section styling end */
+/* Donation section styling */
+.quick-donate {
+    background-color: #f0fcdc;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.quick-donate .col-1 {
+    display: flex;
+    /* align-items: center; */
+}
+.b-back {
+    background-color: #424242;
+}
+.b-first {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    min-height: 54px;
+    font-size: 12px;
+    padding: 0 11px;
+    border-radius: 5px 0 0 5px;
+}
+.b-sec {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    min-height: 54px;
+    padding: 0 11px;
+    border-radius: 0 5px 5px 0;
+}
+.quick-donate input {
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    min-width: 95px;
+    outline: none;
+    color: #424242;
+    font-size: 14px;
+}
+.quick-donate div {
+    padding: 16px 24px;
+}
+.donate-opt {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.donate-opt:hover {
+    background-color: #424242;
+    color: #fff;
+    scale: 1.1;
+}
+.donate-opt:active {
+    scale: 1;
+}
+.quick-donate div, .quick-donate button {
+    text-transform: capitalize;
+}
+.quick-donate button {
+    padding: 16px 32px;
+    background-color: #8dc63f;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.quick-donate button:hover {
+    scale: 1.1;
+}
+/* Donation section styling end */
+/* Gaza help pic styling */
+.gaza-help-pic {
+    margin: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.1);
+}
+.gaza-help-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10;
+}
+
+/* service section styling starts here */
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.services-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.service-1 {
+    
+}
