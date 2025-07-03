@@ -234,6 +234,88 @@ h1 {
     justify-content: space-between;
     gap: 20px;
 }
-.service-1 {
-    
+.service-box {
+    background-color: #b6ef4933;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: 170px;
+    margin-top: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.service-box:hover {
+    scale: 1.1;
+}
+.service-img {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-3-img {
+    width: 50px;
+}
+.service-text > p {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+/* Service Donation Styling */
+.service-donation {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+}
+.service-donation > .donation-box {
+    padding: 40px 10px;
+    border-radius: 10px;
+    width: 480px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.donation-box:hover {
+    scale: 1.05;
+}
+.service-donation-box1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6)),
+    url('Pics/service-donate-bg-1.jpg');
+}
+.service-donation-box1:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('Pics/service-donate-bg-1.jpg');
+    background-size: cover;
+}
+.service-donation-box2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6)),
+    url('Pics/service-donate-bg-2.jpg');
+}
+.service-donation-box2:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('Pics/service-donate-bg-2.jpg');
+    background-size: cover;
+}
+.service-donation p {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+.donation-box > .donate-btn {
+    background-color: #8dc63f;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.donation-box:hover .donate-btn {
+    background-color: rgba(141, 198, 63, 0.7);
 }
